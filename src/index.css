@@ -20,6 +20,7 @@
 html, body {
   min-height: 100vh;
 }
+
 body {
  width: 100%;
  height: 100%;
@@ -217,6 +218,124 @@ gap: 5px;
 }
 
 
-@media screen and (max-width:1275px) {
+@media screen and (max-width:1225px) {
+  .conteiner {
+    width: 90%;
+  }
+
+ 
+}
+
+@media screen and (max-width:1225px) {
+ body::before {
+  content: '';
+  background-size: contain;
+ }
+}
+
+@media screen and (max-width:1023px) {
+ .section-nav::before {
+  content: '';
+  background-size: contain;
+ }
+
+ .section-products {
+  gap: 25px;
+}
+}
+
+@media screen and (max-width:1025px) {
+
   
+  .conteiner {
+    width: 95%;
+    height: auto;
+  }
+
+  #root {
+    height: 100%;
+  }
+
+ .img-product img {
+  width: 100%;
+ }
+
+ .section-products {
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+ }
+
+}
+
+@media screen and (max-width:670px) {
+
+  #root {
+    height: 100%;
+  }
+
+  body {
+    padding: 20px 0;
+  }
+
+  body::before {
+   background-image: url('/public/resources/bg-cafe-sm.jpg');
+  }
+
+  .conteiner {
+    width: 90%;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .section-nav::before {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .section-nav p {
+    width: 100%;
+  }
+
+
+  .section-products {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .products {
+   width: 55%;
+   height: auto;
+   margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width:463px) {
+  .section-nav p {
+    font-size: 0.9rem;
+  }
+
+  .products {
+    width: 65%;
+  }
+
+
+}
+
+
+@media screen and (max-width:417px) {
+  .section-nav p {
+    font-size: 0.8rem;
+  }
+
+  .products {
+    width: 65%;
+  }
+
+  .productAll span {
+   font-size: 0.9rem;
+  }
+
+
 }
